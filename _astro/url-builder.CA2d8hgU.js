@@ -1,0 +1,1 @@
+const c=e=>e.replace(/\/+/g,"/"),a=(e,l=!1,t=!1)=>c(e),o=(e,l)=>{const t=Object.entries(l).filter(([n,r])=>r!==void 0&&r!=="").reduce((n,[r,i])=>({...n,[r]:i}),{});if(Object.keys(t).length===0)return a(e);const s=Object.entries(t).map(([n,r])=>`${n}=${r}`).join("&");return`${a(e)}?${s}`};export{a,o as b};

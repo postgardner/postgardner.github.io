@@ -1,0 +1,71 @@
+# ISpro EventCatalog Documentation
+
+> This internal platform provides a comprehensive view of our event-driven architecture across all systems. Use this portal to discover existing domains, explore services and their dependencies, and understand the message contracts that connect our infrastructure
+
+## Events
+- [Inventory adjusted - InventoryAdjusted - 1.0.1](https://eventcatalog.dev/docs/events/InventoryAdjusted/1.0.1.mdx) - Indicates a change in inventory level
+- [Order cancelled - OrderCancelled - 0.0.1](https://eventcatalog.dev/docs/events/OrderCancelled/0.0.1.mdx) - Indicates an order has been canceled
+- [Inventory out of stock - OutOfStock - 0.0.4](https://eventcatalog.dev/docs/events/OutOfStock/0.0.4.mdx) - Indicates inventory is out of stock
+- [Return initiated - ReturnInitiated - 0.0.1](https://eventcatalog.dev/docs/events/ReturnInitiated/0.0.1.mdx) - Event that is emitted when a return is initiated.
+- [Order confirmed - OrderConfirmed - 0.0.1](https://eventcatalog.dev/docs/events/OrderConfirmed/0.0.1.mdx) - Indicates an order has been confirmed
+- [Order amended - OrderAmended - 0.0.1](https://eventcatalog.dev/docs/events/OrderAmended/0.0.1.mdx) - Indicates an order has been changed
+- [Shipment created - ShipmentCreated - 0.0.1](https://eventcatalog.dev/docs/events/ShipmentCreated/0.0.1.mdx) - Event that is emitted when a shipment is created.
+- [Delivery failed - DeliveryFailed - 0.0.1](https://eventcatalog.dev/docs/events/DeliveryFailed/0.0.1.mdx) - Event that is emitted when a shipment delivery fails.
+- [Shipment delivered - ShipmentDelivered - 0.0.1](https://eventcatalog.dev/docs/events/ShipmentDelivered/0.0.1.mdx) - Event that is emitted when a shipment is delivered.
+- [Shipment dispatched - ShipmentDispatched - 0.0.1](https://eventcatalog.dev/docs/events/ShipmentDispatched/0.0.1.mdx) - Event that is emitted when a shipment is dispatched.
+- [Shipment in transit - ShipmentInTransit - 0.0.1](https://eventcatalog.dev/docs/events/ShipmentInTransit/0.0.1.mdx) - Event that is emitted when a shipment is in transit.
+- [Inventory adjusted - InventoryAdjusted - 0.0.1](https://eventcatalog.dev/docs/events/InventoryAdjusted/0.0.1.mdx) - Indicates a change in inventory level
+- [User subscription started - UserSubscriptionStarted - 0.0.1](https://eventcatalog.dev/docs/events/UserSubscriptionStarted/0.0.1.mdx) - An event that is triggered when a new user subscription has started
+- [Payment Initiated - PaymentInitiated - 0.0.1](https://eventcatalog.dev/docs/events/PaymentInitiated/0.0.1.mdx) - Event is triggered when a user initiates a payment through the Payment Service- [User subscription cancelled - UserSubscriptionCancelled - 0.0.1](https://eventcatalog.dev/docs/events/UserSubscriptionCancelled/0.0.1.mdx) - An event that is triggered when a users subscription has been cancelled
+- [Inventory out of stock - OutOfStock - 0.0.1](https://eventcatalog.dev/docs/events/OutOfStock/0.0.1.mdx) - Indicates inventory is out of stock
+- [Inventory adjusted - InventoryAdjusted - 1.0.0](https://eventcatalog.dev/docs/events/InventoryAdjusted/1.0.0.mdx) - Indicates a change in inventory level
+- [Payment Processed - PaymentProcessed - 1.0.0](https://eventcatalog.dev/docs/events/PaymentProcessed/1.0.0.mdx) - Event is triggered after the payment has been successfully processed- [Payment Processed - PaymentProcessed - 0.0.1](https://eventcatalog.dev/docs/events/PaymentProcessed/0.0.1.mdx) - Event is triggered after the payment has been successfully processed
+
+## Commands
+- [Place Order - PlaceOrder - 0.0.1](https://eventcatalog.dev/docs/commands/PlaceOrder/0.0.1.mdx) - Command that will place an order
+- [Add inventory - AddInventory - 0.0.3](https://eventcatalog.dev/docs/commands/AddInventory/0.0.3.mdx) - Command that will add item to a given inventory id
+- [Update inventory - UpdateInventory - 0.0.3](https://eventcatalog.dev/docs/commands/UpdateInventory/0.0.3.mdx) - Command that will update a given inventory item
+- [Cancel shipment - CancelShipment - 0.0.1](https://eventcatalog.dev/docs/commands/CancelShipment/0.0.1.mdx) - POST request that will cancel a shipment, identified by its shipmentId.
+- [Update shipment status - UpdateShipmentStatus - 0.0.1](https://eventcatalog.dev/docs/commands/UpdateShipmentStatus/0.0.1.mdx) - POST request that will update the status of a shipment, identified by its shipmentId.
+- [Cancel subscription - CancelSubscription - 0.0.1](https://eventcatalog.dev/docs/commands/CancelSubscription/0.0.1.mdx) - Command that will try and cancel a users subscription
+- [Subscribe user - SubscribeUser - 0.0.1](https://eventcatalog.dev/docs/commands/SubscribeUser/0.0.1.mdx) - Command that will try and subscribe a given user
+- [Create shipment - CreateShipment - 0.0.1](https://eventcatalog.dev/docs/commands/CreateShipment/0.0.1.mdx) - POST request that will create a shipment for a specific order, identified by its orderId.
+- [Create return label - CreateReturnLabel - 0.0.1](https://eventcatalog.dev/docs/commands/CreateReturnLabel/0.0.1.mdx) - POST request that will create a return label for a specific shipment, identified by its shipmentId.
+
+
+## Queries
+- [Get notification details - GetNotificationDetails - 0.0.1](https://eventcatalog.dev/docs/queries/GetNotificationDetails/0.0.1.mdx) - GET request that will return detailed information about a specific notification, identified by its notificationId.
+- [Get payment status - GetPaymentStatus - 0.0.1](https://eventcatalog.dev/docs/queries/GetPaymentStatus/0.0.1.mdx) - GET request that will return the payment status for a specific order, identified by its orderId.
+- [Get user notifications - GetUserNotifications - 0.0.1](https://eventcatalog.dev/docs/queries/GetUserNotifications/0.0.1.mdx) - GET request that will return a list of notifications for a specific user, with options to filter by status (unread or all).
+- [List inventory list - GetInventoryList - 0.0.1](https://eventcatalog.dev/docs/queries/GetInventoryList/0.0.1.mdx) - GET request that will return inventory list
+- [Get inventory status - GetInventoryStatus - 0.0.1](https://eventcatalog.dev/docs/queries/GetInventoryStatus/0.0.1.mdx) - GET request that will return the current stock status for a specific product.
+- [Get subscription status - GetSubscriptionStatus - 0.0.1](https://eventcatalog.dev/docs/queries/GetSubscriptionStatus/0.0.1.mdx) - GET request that will return the current subscription status for a specific user, identified by their userId.
+- [Get order details - GetOrder - 0.0.1](https://eventcatalog.dev/docs/queries/GetOrder/0.0.1.mdx) - GET request that will return detailed information about a specific order, identified by its orderId.
+- [Get subscription status - GetSubscriptionStatus - 0.0.2](https://eventcatalog.dev/docs/queries/GetSubscriptionStatus/0.0.2.mdx) - GET request that will return the current subscription status for a specific user, identified by their userId.
+
+
+## Services
+- [Subscription Service - SubscriptionService - 0.0.1](https://eventcatalog.dev/docs/services/SubscriptionService/0.0.1.mdx) - Service that handles subscriptions
+- [Payment Service - PaymentService - 0.0.1](https://eventcatalog.dev/docs/services/PaymentService/0.0.1.mdx) - Service that handles payments
+- [Inventory Service - InventoryService - 0.0.2](https://eventcatalog.dev/docs/services/InventoryService/0.0.2.mdx) - Service that handles the inventory
+- [Shipping Service - ShippingService - 0.0.1](https://eventcatalog.dev/docs/services/ShippingService/0.0.1.mdx) - Service that handles shipping
+- [Notifications - NotificationService - 0.0.2](https://eventcatalog.dev/docs/services/NotificationService/0.0.2.mdx) - Service that handles orders
+- [Orders Service - OrdersService - 0.0.3](https://eventcatalog.dev/docs/services/OrdersService/0.0.3.mdx) - Service that handles orders
+- [Inventory Service - InventoryService - 0.0.1](https://eventcatalog.dev/docs/services/InventoryService/0.0.1.mdx) - Service that handles the inventory
+- [Orders Service - OrdersService - 0.0.2](https://eventcatalog.dev/docs/services/OrdersService/0.0.2.mdx) - Service that handles orders
+
+
+## Domains
+- [E-Commerce - E-Commerce - 1.0.0](https://eventcatalog.dev/docs/domains/E-Commerce/1.0.0.mdx) - undefined- [Payment - Payment - 0.0.1](https://eventcatalog.dev/docs/domains/Payment/0.0.1.mdx) - Domain that contains payment related services and messages.
+- [Orders - Orders - 0.0.3](https://eventcatalog.dev/docs/domains/Orders/0.0.3.mdx) - undefined- [Subscription - Subscription - 0.0.1](https://eventcatalog.dev/docs/domains/Subscription/0.0.1.mdx) - Domain that contains subscription related services and messages.
+- [Orders - Orders - 0.0.2](https://eventcatalog.dev/docs/domains/Orders/0.0.2.mdx) - undefined- [Orders - Orders - 0.0.1](https://eventcatalog.dev/docs/domains/Orders/0.0.1.mdx) - Domain for everything shopping
+
+
+## Teams
+- [full-stack](https://eventcatalog.dev/docs/teams/full-stack.mdx) - Full stackers
+- [mobile-devs](https://eventcatalog.dev/docs/teams/mobile-devs.mdx) - The mobile devs
+
+## Users
+- [asmith](https://eventcatalog.dev/docs/users/asmith.mdx) - Amy Smith
+- [msmith](https://eventcatalog.dev/docs/users/msmith.mdx) - Martin Smith
+- [dboyne](https://eventcatalog.dev/docs/users/dboyne.mdx) - David Boyne
